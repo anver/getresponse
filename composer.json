@@ -1,8 +1,8 @@
 {
     "name": "anver/getresponse",
     "description": "GetResponse API v3 client library.",
-    "version": "0.0.2",
-    "homepage": "https://github.com/GetResponse/getresponse-api-php",
+    "version": "0.0.3",
+    "homepage": "https://github.com/anver/getresponse",
     "keywords": ["GetResponse", "api", "email"],
     "type": "library",
     "license": "MIT",
@@ -16,11 +16,11 @@
             "email": "grzegorz.struczynski@getresponse.com"
         }
     ],
-    "require": {
-        "php": ">=5.2.0",
-        "ext-curl": "*"
-    },
     "autoload": {
-        "files": ["src/GetResponseAPI3.class.php"]
-    }
+        "psr-4": {
+            "SmaartWeb\\GetResponse\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
